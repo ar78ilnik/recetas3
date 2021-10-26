@@ -7,3 +7,9 @@
 		display: block;
 	}
 }
+
+@media (min-width: $desktop-width) {
+	.nav {
+		margin-bottom: 40px;
+	}
+}

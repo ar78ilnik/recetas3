@@ -8,6 +8,8 @@
 	.list {
 		&_nav {
 			display: flex;
+			column-gap: 5%;
+			border-bottom: 1px var(--title) solid;
 		}
 	}
 }
