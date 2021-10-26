@@ -1,0 +1,28 @@
+.logo {
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	&__recetas {
+		@include font(var(--28px-size), 40px, var(--title), 0.1em, 400);
+		text-align: center;
+	}
+	&__dop {
+		@include font(var(--18px-size), 24px, var(--title), 0.1em, 600);
+		text-align: center;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.logo {
+		padding-top: 0;
+		&__recetas {
+			@include font(var(--62px-size), 90px, var(--title), 0.1em, 400);
+		}
+		&__dop {
+			@include font(var(--34px-size), 45px, var(--title), 0.1em, 600);
+		}
+	}
+}

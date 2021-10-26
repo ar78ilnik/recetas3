@@ -1,0 +1,12 @@
+/* Link */
+
+.link {
+	text-decoration: none;
+	&_nav {
+		display: inline-block;
+		font-family: 'Inter', sans-serif;
+		@include font(var(--18px-size), 24px, var(--title), 0.03em, 400);
+		padding-top: 32px;
+		padding-bottom: 32px;
+	}
+}

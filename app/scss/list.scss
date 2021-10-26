@@ -1,0 +1,13 @@
+.list {
+	&_nav {
+		list-style-type: none;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.list {
+		&_nav {
+			display: flex;
+		}
+	}
+}
