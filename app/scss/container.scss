@@ -9,6 +9,12 @@
 	}
 }
 
+@media (min-width: $portait-width) {
+	.container {
+		width: $container-portait;
+	}
+}
+
 @media (min-width: $desktop-width) {
 	.container {
 		width: $container-desktop;

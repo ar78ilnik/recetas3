@@ -1,0 +1,29 @@
+.header {
+	&__wrap {
+		display: flex;
+		justify-content: center;
+		column-gap: 10px;
+	}
+	&__menu {
+		border-top: 1px var(--title) solid;
+		border-bottom: 1px var(--title) solid;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.header {
+		&__wrap {
+			display: none;
+		}
+		&__menu {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+}

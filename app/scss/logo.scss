@@ -17,7 +17,21 @@
 
 @media (min-width: $tablet-width) {
 	.logo {
-		padding-top: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		&__recetas {
+			@include font(var(--62px-size), 90px, var(--title), 0.1em, 400);
+		}
+		&__dop {
+			@include font(var(--34px-size), 45px, var(--title), 0.1em, 600);
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.logo {
+		padding-top: 40px;
+		padding-bottom: 40px;
 		&__recetas {
 			@include font(var(--62px-size), 90px, var(--title), 0.1em, 400);
 		}

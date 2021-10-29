@@ -33,8 +33,12 @@
 
 $mobile-width: 320px;
 $tablet-width: 768px;
+$portait-width: 1000px;
 $desktop-width: 1440px;
 
-$container-mobile: 87.5%;
-$container-tablet: 96%;
-$container-desktop: 90.28%;
+/* Widths of containers*/
+
+$container-mobile: 280px;
+$container-tablet: 738px;
+$container-portait: 960px;
+$container-desktop: 1300px;
