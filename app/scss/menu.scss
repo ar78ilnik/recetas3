@@ -1,0 +1,17 @@
+/* Menu */
+
+.menu {
+	&_main {
+		display: none;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100vh;
+	}
+	&_opened {
+		display: block;
+		width: 320px;
+		padding-top: 30px;
+		background-color: gray;
+	}
+}

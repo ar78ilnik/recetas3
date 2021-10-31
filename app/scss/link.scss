@@ -9,4 +9,10 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
+	&_menu {
+		color: var(--title);
+		display: block;
+		width: 100%;
+		line-height: 32px;
+	}
 }

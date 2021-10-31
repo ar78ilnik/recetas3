@@ -1,6 +1,7 @@
 /* Body */
 
 .body {
+	position: relative;
 	font-family: 'Inter', sans-serif;
 	@include font(var(--16px-size), 16px, var(--title), 0.1em, 400);
 }
