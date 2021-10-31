@@ -1,0 +1,5 @@
+.title {
+	&_h2 {
+		@include font(var(--20px-size), 30px, var(--title), 0.05em, 700);
+	}
+}
