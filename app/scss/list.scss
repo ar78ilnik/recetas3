@@ -1,13 +1,16 @@
+/* List */
+
 .list {
 	list-style-type: none;
 	&_main {
-		padding-top: 20px;
+		padding: 20px 20px;
 	}
 	&__item_menu {
 		display: flex;
 		align-items: center;
 		column-gap: 10px;
 		margin-bottom: 20px;
+		border-bottom: 1px solid var(--title);
 	}
 }
 
@@ -17,6 +20,25 @@
 			display: flex;
 			column-gap: 5%;
 			border-bottom: 1px var(--title) solid;
+		}
+	}
+}
+
+@media (min-width: $portait-width) {
+	.list {
+		&_main {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			border-top: 1px solid var(--title);
+			border-bottom: 1px solid var(--title);
+		}
+		&__item_menu {
+			display: flex;
+			align-items: center;
+			column-gap: 10px;
+			border-bottom: none;
+			margin-bottom: 0;
 		}
 	}
 }

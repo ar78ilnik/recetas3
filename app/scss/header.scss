@@ -14,8 +14,13 @@
 		width: 20px;
 		height: 20px;
 	}
-
 	&__svg {
+		transform-origin: center;
+  		transform: rotate(-90deg);
+  		transition-property: transform;
+  		transition-duration: 1s;
+	}
+	&__svg_rotated {
 		transform-origin: center;
 		transform: rotate(90deg);
 		transition-property: transform;
@@ -23,14 +28,10 @@
 	}
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $portait-width) {
 	.header {
-		&__wrap {
-			display: none;
-		}
 		&__menu {
-			padding-top: 20px;
-			padding-bottom: 20px;
+			display: none;
 		}
 	}
 }

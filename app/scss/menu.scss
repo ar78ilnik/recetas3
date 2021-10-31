@@ -12,6 +12,37 @@
 		display: block;
 		width: 320px;
 		padding-top: 30px;
-		background-color: gray;
+		background-color: var(--basic-white);
+		z-index: 2;
+	}
+	&__back {
+		display: none;
+	}
+	&__back_opened {
+		display: block;
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: rgba(28,28,28,0.5);
+	}
+	&__close {
+		width: 26px;
+		height: 26px;
+		margin-left: auto;
+		margin-right: 5%;
+	}
+}
+
+@media (min-width: $portait-width) {
+	.menu {
+		&_main {
+			display: block;
+			position: relative;
+		}
+		&__close {
+			display: none;
+		}
 	}
 }

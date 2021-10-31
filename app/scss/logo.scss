@@ -28,6 +28,12 @@
 	}
 }
 
+@media (min-width: $portait-width) {
+	.logo {
+		padding-bottom: 40px;
+	}
+}
+
 @media (min-width: $desktop-width) {
 	.logo {
 		padding-top: 40px;
