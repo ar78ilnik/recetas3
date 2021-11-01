@@ -11,32 +11,40 @@
 			@@include('html_components/_header.html')
 			<main class="main">
 				<section class="today">
-                    <span class="today__title">#Сегодня читают ></span>
-                    <div class="today__read">
-                        <span class="today__elem">#теги</span>
-                        <span class="today__elem">#теги</span>
-                        <span class="today__elem">#теги</span>
-                    </div>
-                </section>
-                <section class="wrapper wrapper_recipes">
-                	<h2 class="title title_h2">последние посты</h2>
-                	<section class="wrapper__cards">
-                		<div class="wrapper__card card">
-                			<div class="card__meta">
-                				<span class="title title_card">Десерты</span>
-                				<svg class="icon icon_dot" viewBox="0 0 5 5">
-                                	<use xlink:href="img/sprite.svg#dot"></use>
-                            	</svg>
-                            	<span class="card__date">Июль 18, 2021г.</span>
-                			</div>
-                		</div>
-                	</section>
-                </section>
+					<span class="today__title">#Сегодня читают ></span>
+					<div class="today__read">
+						<span class="today__elem">#теги</span>
+						<span class="today__elem">#теги</span>
+						<span class="today__elem">#теги</span>
+					</div>
+				</section>
+				<section class="wrapper wrapper_recipes">
+					<h2 class="title title_h2">последние посты</h2>
+					<section class="wrapper__cards">
+						<div class="wrapper__card card">
+							<div class="card__meta">
+								<span class="title title_card">Десерты</span>
+								<svg class="icon icon_dot" viewBox="0 0 5 5">
+									<use xlink:href="img/sprite.svg#dot"></use>
+								</svg>
+								<span class="card__date">Июль 18, 2021г.</span>
+							</div>
+							<picture>
+								<source
+								srcset="img/about.avif"
+								type="image/avif"
+								media="(min-width: 768px)"
+								/>
+								<img src="img/post1-mobile.avif" alt="">
+							</picture>
+						</div>
+					</section>
+				</section>
 			</main>
 			@@include('html_components/_aside.html')
 		</div>
-		<footer class="footer"></footer>
-		<div class="body__back"></div>
-	</body>
-	<script src="js/script.js"></script>
+	<footer class="footer"></footer>
+	<div class="body__back"></div>
+</body>
+<script src="js/script.js"></script>
 </html>
