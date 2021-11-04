@@ -2,6 +2,7 @@
 
 .link {
 	text-decoration: none;
+	color: var(--title);
 	&_nav {
 		display: inline-block;
 		font-family: 'Inter', sans-serif;
@@ -14,5 +15,11 @@
 		display: block;
 		width: 100%;
 		line-height: 32px;
+	}
+	&_more {
+		border: 1px solid var(--title);
+		border-radius: 23px;
+		padding: 14px 23px;
+		margin: 70px auto;
 	}
 }

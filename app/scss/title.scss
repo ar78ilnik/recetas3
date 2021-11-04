@@ -1,5 +1,10 @@
 .title {
+	margin-bottom: 40px;
 	&_h2 {
 		@include font(var(--20px-size), 30px, var(--title), 0.05em, 700);
+	}
+	&_card {
+		display: inline-block;
+		margin-bottom: 12px;
 	}
 }
