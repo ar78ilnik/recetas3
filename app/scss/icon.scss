@@ -1,3 +1,4 @@
+/* Icon */
 .icon {
 	&_category {
 		width: 24px;
@@ -10,5 +11,14 @@
 	&_recipe {
 		width: 22px;
 		height: 22px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.icon {
+		&_info {
+			width: 24px;
+			height: 24px;
+		}
 	}
 }

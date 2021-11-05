@@ -1,3 +1,11 @@
+/* Today */
+
 .today {
 	display: none;
+}
+
+@media (min-width: $tablet-width) {
+	.today {
+		display: block;
+	}
 }

@@ -32,15 +32,14 @@ function html() {
 function images() {
     return gulp.src('app/img/**/*.{jpg,png}')
     .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'))
-    .pipe(debug({title: 'images'}));
+    .pipe(gulp.dest('dist/img'));
 }
 
 function toWebp() {
     return gulp.src('app/img/**/*.{jpg,png}')
     .pipe(webp())
     .pipe(gulp.dest('dist/img'))
-    .pipe(debug({title: 'toWebp'}))
+    .pipe(debug({title:'toWebp'}));
 }
 
 function toAvif() {
@@ -49,7 +48,7 @@ function toAvif() {
             quality: 50
         }))
         .pipe(gulp.dest('dist/img'))
-        .pipe(debug({title: 'toAvif'}))
+        .pipe(debug({title:'toAvif'}));
 }
 
 function sprite() {
@@ -58,7 +57,7 @@ function sprite() {
             inlineSvg: true
         }))
         .pipe(rename('sprite.svg'))
-        .pipe(gulp.dest('dist/img'))
+        .pipe(gulp.dest('dist/img'));
 }
 
 function copy() {
@@ -93,7 +92,7 @@ function style() {
         .pipe(gulp.dest('dist/css'))
         .pipe(bs.reload({
             stream: true
-        }))
+        }));
 };
 
 function js() {
@@ -112,7 +111,7 @@ function watch() {
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
     gulp.watch('app/img/**/*.*', toAvif);
     gulp.watch('app/img/**/*.*', toWebp);
-    gulp.watch('app/img/**/*.*', sprite);
+    gulp.watch('app/img/**/*.svg', sprite);
 };
 
 function server() {

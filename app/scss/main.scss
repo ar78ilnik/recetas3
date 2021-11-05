@@ -1,6 +1,6 @@
-/* Wrapper */
-
+/* Main */
 @media (min-width: $portait-width) {
-	.wrapper {
+	.main {
+		flex-basis: 54%;
 	}
 }
