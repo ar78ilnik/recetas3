@@ -1,12 +1,12 @@
 /* Logo */
 .logo {
-	font-family: 'Inter', sans-serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	padding-top: 32px;
 	padding-bottom: 32px;
 	&__recetas {
+		font-family: Oswald, sans-serif;
 		@include font(var(--28px-size), 40px, var(--title), 0.1em, 400);
 		text-align: center;
 	}
@@ -26,12 +26,6 @@
 		&__dop {
 			@include font(var(--34px-size), 45px, var(--title), 0.1em, 600);
 		}
-	}
-}
-
-@media (min-width: $portait-width) {
-	.logo {
-		padding-bottom: 40px;
 	}
 }
 

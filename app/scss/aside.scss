@@ -1,6 +1,24 @@
 /* Aside */
+.aside {
+	display: flex;
+	flex-direction: column;
+	&__item {
+		margin-bottom: 60px;
+	}
+	&__date {
+		@include font(var(--12px-size), 18px, var(--title), 0.05em, 400);
+	}
+}
+
 @media (min-width: $portait-width) {
 	.aside {
 		flex-basis: 27%;
+		&__form {
+		}
+		&__hello {
+		}
+		&__search {}
+		&__new {}
+		&__tags {}
 	}
 }

@@ -1,0 +1,24 @@
+/* Hello */
+.hello {
+	display: flex;
+	flex-direction: column;
+	&__text {
+		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
+		margin-bottom: 40px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.hello {
+		align-items: center;
+		&__picture {
+			order: 0;
+			margin-bottom: 40px;
+		}
+		&__text {
+			order: 2;
+			margin-bottom: 0;
+			width: 80%;
+		}
+	}
+}

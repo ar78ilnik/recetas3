@@ -1,12 +1,31 @@
 /* Title */
 
 .title {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	&_h2 {
+		font-family: 'Roboto Condensed', sans-serif;
 		@include font(var(--20px-size), 30px, var(--title), 0.05em, 700);
+	}
+	&_h3 {
+		font-family: Inter, sans-serif;
+		@include font(var(--18px-size), 30px, var(--title), 0.05em, 600);
 	}
 	&_card {
 		display: inline-block;
 		margin-bottom: 12px;
+	}
+	&_new {
+		@include font(var(--12px-size), 21px, var(--title), 0.05em, 600);
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.title {
+		&_h2 {
+			text-align: center;
+			@include font(var(--26px-size), 39px, var(--title), 0.05em, 700);
+			order: 1;
+		}
 	}
 }

@@ -1,0 +1,34 @@
+.form {
+	position: relative;
+	width: 290px;
+	&__legend {
+		@include font(var(--16px-size), 24px, var(--title), 0.05em, 500);
+		margin-bottom: 13px;
+	}
+	&__fieldset {
+		border: 0;
+	}
+	&__input {
+		padding: 15px 60px 15px 20px;
+		border-radius: 20px;
+		border: 1px solid var(--border);
+	}
+	&__input:active {
+		border: 1px solid var(--border);
+	}
+	&__submit {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 15px 23px;
+		border-radius: 20px;
+		border: 1px solid var(--border);
+		background-color: var(--basic-white);
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.form{
+		margin: 0 auto;
+	}
+}

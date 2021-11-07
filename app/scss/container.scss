@@ -3,6 +3,13 @@
 .container {
 	width: $container-mobile;
 	margin: 0 auto;
+	&_menu {
+		padding: 20px;
+	}
+	&_footer {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 @media (min-width: $tablet-width) {
@@ -20,6 +27,10 @@
 			flex-direction: row;
 			justify-content: space-between;
 			width: 90%;
+		}
+		&_menu {
+			width: 100%;
+			padding: 0;
 		}
 	}
 }

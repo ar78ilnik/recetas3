@@ -10,16 +10,37 @@
 		padding-top: 32px;
 		padding-bottom: 32px;
 	}
-	&_menu {
+	&_category {
 		color: var(--title);
 		display: block;
 		width: 100%;
 		line-height: 32px;
 	}
-	&_more {
+	&_general {
 		border: 1px solid var(--title);
 		border-radius: 23px;
 		padding: 14px 23px;
 		margin: 70px auto;
+	}
+	&_search {
+		display: block;
+		padding-bottom: 15px;
+		padding-top: 15px;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.link {
+		&_general {
+			order: 3;
+		}
+	}
+}
+
+@media (min-width: $portait-width) {
+	.link {
+		&_category {
+			font-size: 14px;
+		}
 	}
 }
