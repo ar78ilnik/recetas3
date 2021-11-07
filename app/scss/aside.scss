@@ -14,11 +14,22 @@
 	.aside {
 		flex-basis: 27%;
 		&__form {
+			order: 0;
 		}
 		&__hello {
+			order: 1;
 		}
-		&__search {}
-		&__new {}
-		&__tags {}
+		&__category {
+			order: 2;
+		}
+		&__search {
+			order: 3;
+		}
+		&__new {
+			order: 4;
+		}
+		&__tags {
+			order: 5;
+		}
 	}
 }
