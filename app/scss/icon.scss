@@ -12,13 +12,8 @@
 		width: 22px;
 		height: 22px;
 	}
-}
-
-@media (min-width: $tablet-width) {
-	.icon {
-		&_info {
-			width: 24px;
-			height: 24px;
-		}
+	&_info {
+		width: 24px;
+		height: 24px;
 	}
 }

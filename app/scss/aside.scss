@@ -2,11 +2,32 @@
 .aside {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	&__item {
 		margin-bottom: 60px;
 	}
 	&__date {
 		@include font(var(--12px-size), 18px, var(--title), 0.05em, 400);
+	}
+	&__form {
+		width: 296px;
+	}
+	&__category,
+	&__search,
+	&__new,
+	&__tags {
+		width: 100%;
+	}
+}
+
+@media (min-width: $tablet-width) {
+	.aside {
+		&__category,
+		&__search,
+		&__new,
+		&__tags {
+			width: 296px;
+		}
 	}
 }
 

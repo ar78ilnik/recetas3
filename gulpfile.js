@@ -31,15 +31,17 @@ function html() {
 
 function images() {
     return gulp.src('app/img/**/*.{jpg,png}')
-    .pipe(imagemin())
-    .pipe(gulp.dest('dist/img'));
+        .pipe(imagemin())
+        .pipe(gulp.dest('dist/img'));
 }
 
 function toWebp() {
     return gulp.src('app/img/**/*.{jpg,png}')
-    .pipe(webp())
-    .pipe(gulp.dest('dist/img'))
-    .pipe(debug({title:'toWebp'}));
+        .pipe(webp())
+        .pipe(gulp.dest('dist/img'))
+        .pipe(debug({
+            title: 'toWebp'
+        }));
 }
 
 function toAvif() {
@@ -48,7 +50,9 @@ function toAvif() {
             quality: 50
         }))
         .pipe(gulp.dest('dist/img'))
-        .pipe(debug({title:'toAvif'}));
+        .pipe(debug({
+            title: 'toAvif'
+        }));
 }
 
 function sprite() {
@@ -124,7 +128,7 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, images, toWebp, toAvif, sprite, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, images, toAvif, sprite, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;
