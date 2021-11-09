@@ -1,6 +1,8 @@
 /* Wrapper */
 
-@media (min-width: $portait-width) {
-	.wrapper {
+.wrapper {
+	&_social {
+		display: flex;
+		justify-content: space-between;
 	}
 }

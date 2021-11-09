@@ -20,6 +20,10 @@
 	&__text {
 		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
 	}
+	&__trick {
+		border-top: 5px solid var(--border-trick);
+		border-bottom: 5px solid var(--border-trick);
+	}
 	&__text-trick {
 		@include font(var(--16px-size), 24px, var(--title), 0.05em, 700);
 		margin-bottom: $text-margin;
@@ -56,6 +60,9 @@
 		width: 84px;
 		font-family: 'Roboto Condensed', sans-serif;
 		@include font(var(--12px-size), 16px, var(--title), 0.05em, 700);
+	}
+	&__social {
+		width: 100%;
 	}
 }
 
