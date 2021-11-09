@@ -1,0 +1,16 @@
+.table {
+	width: 100%;
+	&__body {
+		@include font(var(--14px-size), 42px, var(--title), 0.05em, 400);
+	}
+	&__row {
+		border-bottom-style: 1px solid var(--title);
+	}
+	&_left {
+		text-align: left;
+		width: 70%;
+	}
+	&_right {
+		text-align: right;
+	}
+}

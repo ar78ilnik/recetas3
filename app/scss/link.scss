@@ -3,8 +3,6 @@
 .link {
 	text-decoration: none;
 	@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
-	text-align: center;
-
 	&_nav {
 		display: inline-block;
 		font-family: 'Inter', sans-serif;
@@ -19,19 +17,20 @@
 		line-height: 32px;
 	}
 	&_general {
-	margin: 70px auto;
-	border: 1px solid var(--title);
-	border-radius: 23px;
-	padding: 14px 23px;
-	@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
+		margin: 70px auto;
+		border: 1px solid var(--title);
+		border-radius: 23px;
+		padding: 14px 23px;
+		@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
 	}
 	&_recipe {
-	margin: 15px;
-	border: 1px solid var(--title);
-	border-radius: 23px;
-	padding: 14px 23px;
-	display: inline-block;
-	min-width: 230px;
+		margin: 15px;
+		border: 1px solid var(--title);
+		border-radius: 23px;
+		padding: 14px 23px;
+		display: inline-block;
+		min-width: 230px;
+		text-align: center;
 	}
 	&_search {
 		display: block;

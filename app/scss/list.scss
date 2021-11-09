@@ -6,7 +6,7 @@
 		display: flex;
 		align-items: center;
 		column-gap: 10px;
-		margin-bottom: 20px;
+		margin-bottom: $info-margin;
 		border-bottom: 1px solid var(--title);
 	}
 	&__item_search {

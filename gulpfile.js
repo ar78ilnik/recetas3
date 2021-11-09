@@ -114,7 +114,6 @@ function watch() {
     gulp.watch('app/js/**/*.js', js);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
     gulp.watch('app/img/**/*.*', toAvif);
-    gulp.watch('app/img/**/*.*', toWebp);
     gulp.watch('app/img/**/*.svg', sprite);
 };
 

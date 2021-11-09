@@ -12,7 +12,7 @@
 			<main class="main">
 				<div class="container_main">
 					<section class="recipe card">
-						<div class="card__meta">
+						<div class="card__meta title">
 							<span class="card__date">Июль 18, 2021г.</span>
 						</div>
 						<div class="card__picture">
@@ -70,14 +70,109 @@
 						<p class="card__text">Были в Испании времена, когда это простое блюдо было королем в меню ресторанов Испании. В дальнейшем этот скромный десерт был изменен и дополнен шеф-поварами лучших ресторанов Испании. Кто-то заменял молоко на сливки или на их смесь. Кто-то использовал только желтки или добавлял сгущенное молоко. В самых изощренных использовались яйца с синей скорлупой от арауканских кур.
 						</p>
 						<a href="recepie.html" class="link link_recipe">Распечатать рецепт</a>
-						<a href="recepie.html" class="link link_recipe">Шопинг лист</a><section class="card__ingredients">
-						<h2 class="title title_h2">Ингредиенты</h2>
+						<a href="recepie.html" class="link link_recipe">Шопинг лист</a>
+						<section class="card__ingredients">
+							<h2 class="title title_h2">Ингредиенты</h2>
+							<div class="card__form">
+								<form action="" class="form">
+									<select name="doses" id="doses-select" class="form__select">
+										<option value="">Порции</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="5">5</option>
+									</select>
+								</form>
+							</div>
+							<table class="card__table table">
+								<tbody class="table__body">
+									<tr class="table__row">
+										<td class="table_left">Молоко</td>
+										<td class="table_right">0,5 литра</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table_left">Сахар</td>
+										<td class="table_right">125 гр.</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table_left">Яйца (среднего размера)</td>
+										<td class="table_right">3 шт.</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table_left">Немного кожи лимона или апельсина</td>
+										<td class="table_right">1 шт.</td>
+									</tr>
+									<tr class="table__row">
+										<td class="table_left">Палочка корицы</td>
+										<td class="table_right">1 шт.</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section class="card__preparation">
+							<h2 class="title title_h2">Приготовление</h2>
+							<ul class="card__list">
+								<li class="card__item">
+									<span class="card__number">1</span>
+									<p class="card__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.
+									</p>
+									<div class="card__picture">
+										<picture>
+											<source srcset="img/prep1-desktop@1x.avif 768w" media="(min-width: 1440px)" type="image/avif"/>
+											<source srcset="img/prep1-desktop@1x.webp 768w" media="(min-width: 1440px)" type="image/webp"/>
+											<source srcset="img/prep1-desktop@1x.jpg 768w" media="(min-width: 1440px)" type="image/jpeg"/>
+											<source srcset="img/prep1-tablet@1x.avif 736w" media="(min-width: 768px)" type="image/avif"/>
+											<source srcset="img/prep1-tablet@1x.webp 736w" media="(min-width: 768px)" type="image/webp"/>
+											<source srcset="img/prep1-tablet@1x.jpg 736w" media="(min-width: 768px)" type="image/jpeg"/>
+											<source srcset="img/prep1-mobile@1x.avif 280w" type="image/avif"/>
+											<source srcset="img/prep1-mobile@1x.webp 280w" type="image/webp"/>
+											<img class="card__img" alt="Flan"
+											src="img/prep1-mobile@1x.jpg"
+											srcset="
+											img/post1-800_714.jpg 800w,
+											img/1000_893.jpg 1000w" sizes="100vw">
+										</picture>
+									</div>
+								</li>
+								<li class="card__item">
+									<span class="card__number">2</span>
+									<p class="card__text">Смешиваем яйца с сахаром, не спеша помешивая, но не взбиваем. Добавляем остывшее молоко и мешаем до тех пор, пока не растворится сахар. Процеживаем через сито, чтобы очистить от коры корицы и лимона.
+									</p>
+									<div class="card__trick">
+										<h3 class="title title_h3">Хитрости при приготовлении флана</h3>
+										<p class="card__text-trick">Когда я только учился этому рецепту, у меня получался флан с трещинами на поверхности. Это может происходить по двум причинам. Или не залили воды в поднос, или приготовили крем миксером, таким образом в креме остается воздух. Не надо взбивать, перемешивайте все ингредиенты.</p>
+										<p class="card__text-trick">Не обязательно накрывать формочки фольгой, но нужно убедиться, чтобы вода не попала в крем.</p>
+									</div>
+								</li>
+								<li class="card__item">
+									<span class="card__number">3</span>
+									<p class="card__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
+									<div class="card__picture">
+										<picture>
+											<source srcset="img/prep2-desktop@1x.avif 768w" media="(min-width: 1440px)" type="image/avif"/>
+											<source srcset="img/prep2-desktop@1x.webp 768w" media="(min-width: 1440px)" type="image/webp"/>
+											<source srcset="img/prep2-desktop@1x.jpg 768w" media="(min-width: 1440px)" type="image/jpeg"/>
+											<source srcset="img/prep2-tablet@1x.avif 736w" media="(min-width: 768px)" type="image/avif"/>
+											<source srcset="img/prep2-tablet@1x.webp 736w" media="(min-width: 768px)" type="image/webp"/>
+											<source srcset="img/prep2-tablet@1x.jpg 736w" media="(min-width: 768px)" type="image/jpeg"/>
+											<source srcset="img/prep2-mobile@1x.avif 280w" type="image/avif"/>
+											<source srcset="img/prep2-mobile@1x.webp 280w" type="image/webp"/>
+											<img class="card__img" alt="Flan"
+											src="img/prep2-mobile@1x.jpg"
+											srcset="
+											img/post1-800_714.jpg 800w,
+											img/1000_893.jpg 1000w" sizes="100vw">
+										</picture>
+									</div>
+								</li>
+							</ul>
+						</section>
 					</section>
-				</section>
-			</div>
-		</main>
-	</div>
-	@@include('html_components/_footer.html')
-</body>
-<script src="js/script.js"></script>
+				</div>
+			</main>
+		</div>
+		@@include('html_components/_footer.html')
+	</body>
+	<script src="js/script.js"></script>
 </html>
