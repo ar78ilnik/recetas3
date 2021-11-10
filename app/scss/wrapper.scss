@@ -6,3 +6,10 @@
 		justify-content: space-between;
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.wrapper {
+		width: 80%;
+		margin: 0 auto;
+	}
+}

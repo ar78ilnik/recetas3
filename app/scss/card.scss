@@ -19,6 +19,7 @@
 	}
 	&__text {
 		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
+		margin-bottom: $text-margin;
 	}
 	&__trick {
 		border-top: 5px solid var(--border-trick);
@@ -68,7 +69,7 @@
 
 @media (min-width: $tablet-width) {
 	.card {
-		align-items: flex-start;
+		align-items: center;
 		&:last-child {
 			border: 0;
 			margin-bottom: 0;
@@ -85,13 +86,22 @@
 		&__info {
 			margin-bottom: 20px;
 		}
+		&__trick {
+			border: 0;
+			border-left: 5px solid var(--border-trick);
+			padding-left: 35px;
+		}
 		&__elem {
 			width: 120px;
 			justify-content: space-around;
 		}
-			&__likes {
-				width: 100px;
-				margin-left: auto;
+		&__likes {
+			width: 100px;
+			margin-left: auto;
+		}
+		&__social {
+			width: 100%;
+			margin-bottom: $block-margin;
 		}
 	}
 }

@@ -26,5 +26,9 @@
 			@include font(var(--26px-size), 39px, var(--title), 0.05em, 700);
 			order: 1;
 		}
+		&_h3 {
+			font-family: Inter, sans-serif;
+			@include font(var(--24px-size), 36px, var(--title), 0.05em, 600);
+		}
 	}
 }
