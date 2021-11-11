@@ -116,9 +116,10 @@
 							<h2 class="title title_h2">Приготовление</h2>
 							<ul class="card__list">
 								<li class="card__item">
-									<span class="card__number">1</span>
-									<p class="card__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.
-									</p>
+									<div class="card__up">
+										<span class="card__number">1</span>
+										<p class="card__text">Нагреваем молоко с корицей и кожей лимона. Когда начнет закипать, убираем с огня и даем остыть в течение 30 минут.</p>
+									</div>
 									<div class="card__picture">
 										<picture>
 											<source srcset="img/prep1-desktop@1x.avif 768w" media="(min-width: 1440px)" type="image/avif"/>
@@ -138,9 +139,10 @@
 									</div>
 								</li>
 								<li class="card__item">
-									<span class="card__number">2</span>
-									<p class="card__text">Смешиваем яйца с сахаром, не спеша помешивая, но не взбиваем. Добавляем остывшее молоко и мешаем до тех пор, пока не растворится сахар. Процеживаем через сито, чтобы очистить от коры корицы и лимона.
-									</p>
+									<div class="card__up">
+										<span class="card__number">2</span>
+										<p class="card__text">Смешиваем яйца с сахаром, не спеша помешивая, но не взбиваем. Добавляем остывшее молоко и мешаем до тех пор, пока не растворится сахар. Процеживаем через сито, чтобы очистить от коры корицы и лимона.</p>
+									</div>
 									<div class="card__trick">
 										<h3 class="title title_h3">Хитрости при приготовлении флана</h3>
 										<p class="card__text-trick">Когда я только учился этому рецепту, у меня получался флан с трещинами на поверхности. Это может происходить по двум причинам. Или не залили воды в поднос, или приготовили крем миксером, таким образом в креме остается воздух. Не надо взбивать, перемешивайте все ингредиенты.</p>
@@ -148,8 +150,10 @@
 									</div>
 								</li>
 								<li class="card__item">
-									<span class="card__number">3</span>
-									<p class="card__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
+									<div class="card__up">
+										<span class="card__number">3</span>
+										<p class="card__text">Далее приготовим карамель. В кастрюлю поместим 4 столовых ложки сахара и такое же количество воды. На тихом огне доведем до кипения. Должна получится коричневая жидкость. Заливаем в формочки для флана, чтобы немного покрыть дно формочек. Затем неспеша заливаем наш крем. Формочки ставим на поднос с высокими бортами чтобы можно было залить водой, примерно с палец глубиной.</p>
+									</div>
 									<div class="card__picture">
 										<picture>
 											<source srcset="img/prep2-desktop@1x.avif 768w" media="(min-width: 1440px)" type="image/avif"/>
@@ -169,8 +173,10 @@
 									</div>
 								</li>
 								<li class="card__item">
-									<span class="card__number">4</span>
-									<p class="card__text">Далее ставим поднос в духовку на 25-30 минут или пробуя ввести палочку и она должна выйти сухой. Если вы уверены, что флан готов, оставьте его немного остыть и далее в холодильник на 24 часа.</p>
+									<div class="card__up">
+										<span class="card__number">4</span>
+										<p class="card__text">Далее ставим поднос в духовку на 25-30 минут или пробуя ввести палочку и она должна выйти сухой. Если вы уверены, что флан готов, оставьте его немного остыть и далее в холодильник на 24 часа.</p>
+									</div>
 									<div class="card__trick">
 										<h3 class="title title_h3">С чем лучше сочетать флан и как подавать</h3>
 										<p class="card__text-trick">Флан можно подавать со сливками или с фруктами</p>
@@ -216,7 +222,7 @@
 						</section>
 						<section class="card__comments comments">
 							<h2 class="title title_h2">Комментарии</h2>
-							<div class="container">
+							<div class="comments__list">
 								<div class="comments__item">
 									<article class="comments__author">
 										<svg class="icon icon_recipe" viewBox="0 0 10 10">
@@ -242,8 +248,21 @@
 									<p class="comments__text">Замечательный рецепт. Спасибо большое. Попробовала вся семья. Всем понравилось и было вкусно.</p>
 								</div>
 							</div>
+							<form action="" class="form form_recipe">
+								<fieldset class="form__fieldset">
+									<input type="text" class="form__input" name="name" id="name" placeholder="Имя *" required>
+									<input type="text" class="form__input" name="email" id="email" placeholder="Электронный адрес *" required>
+									<textarea class="form__input" id="story" name="story" rows="10" placeholder="Комментарий *"></textarea>
+									<p class="form__personal">
+										<input type="radio" class="form__input form__input_radio" id="radio" name="radio" value="true">
+										<label for="radio" class="form__label">Я даю свое согласие на обработку пресональных данных </label>
+									</p>
+								</fieldset>
+								<input type="submit" class="form__submit" value="Отправить комментарий">
+							</form>
 						</section>
 					</section>
+					@@include('html_components/_aside.html')
 				</div>
 			</main>
 		</div>

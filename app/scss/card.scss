@@ -17,6 +17,10 @@
 		@include font(var(--12px-size), 16px, var(--title), 0.05em, 400);
 		align-self: flex-start;
 	}
+	&__up {
+		display: flex;
+		flex-direction: column;
+	}
 	&__text {
 		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
 		margin-bottom: $text-margin;
@@ -76,6 +80,10 @@
 		}
 		&__meta {
 			@include font(var(--16px-size), 24px, var(--title), 0.05em, 400);
+		}
+		&__up {
+			display: flex;
+			flex-direction: row;
 		}
 		&__info,
 		&__icon,
