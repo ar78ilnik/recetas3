@@ -1,6 +1,8 @@
+/* Next */
 .next {
 	display: flex;
 	justify-content: space-between;
+	margin-bottom: $block-margin;
 	&__previus,
 	&__follow {
 		position: relative;
@@ -11,7 +13,6 @@
 		position: absolute;
 		top: 0;
 		left: 30px;
-		@include font(var(--12px-size), 24px, var(--title), 0.03em, 400);
 	}
 	&__follow::after {
 		content: 'Следующий';
@@ -19,6 +20,5 @@
 		position: absolute;
 		top: 0;
 		right: 30px;
-		@include font(var(--12px-size), 24px, var(--title), 0.03em, 400);
 	}
 }

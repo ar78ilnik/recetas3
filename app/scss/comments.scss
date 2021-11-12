@@ -1,14 +1,8 @@
 /* Comments */
 .comments {
-	&__item {
-		@include font(var(--16px-size), 24px, var(--title), 0.05em, 400);
-		margin-bottom: $title-margin;
-	}
 	&__author {
 		display: flex;
 		align-items: center;
-		column-gap: 15px;
-		margin-bottom: calc($title-margin/2);
 	}
 	&__date {
 		display: flex;

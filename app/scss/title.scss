@@ -1,34 +1,14 @@
 /* Title */
-
 .title {
-	margin-bottom: $title-margin;
+	color: var(--text);
+	&_h1 {
+		display: none;
+	}
 	&_h2 {
-		font-family: 'Roboto Condensed', sans-serif;
-		@include font(var(--20px-size), 30px, var(--title), 0.05em, 700);
+		@include font(calc(var(--font-size)*1.25), 600);
+		margin-bottom: $h2-margin;
 	}
 	&_h3 {
-		font-family: Inter, sans-serif;
-		@include font(var(--18px-size), 30px, var(--title), 0.05em, 600);
-	}
-	&_card {
-		display: inline-block;
-	}
-	&_new {
-		@include font(var(--12px-size), 21px, var(--title), 0.05em, 600);
-		margin-bottom: 0;
-	}
-}
-
-@media (min-width: $tablet-width) {
-	.title {
-		&_h2 {
-			text-align: center;
-			@include font(var(--26px-size), 39px, var(--title), 0.05em, 700);
-			order: 1;
-		}
-		&_h3 {
-			font-family: Inter, sans-serif;
-			@include font(var(--24px-size), 36px, var(--title), 0.05em, 600);
-		}
+		@include font(var(--font-size), 400);
 	}
 }

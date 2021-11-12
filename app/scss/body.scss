@@ -3,7 +3,8 @@
 .body {
 	position: relative;
 	font-family: 'Inter', sans-serif;
-	@include font(var(--16px-size), 16px, var(--title), 0.1em, 400);
+	color: var(--text);
+	@include font(var(--font-size), 400);
 	&__back {
 		display: none;
 	}

@@ -5,37 +5,25 @@
 	flex-direction: column;
 	align-items: center;
 	border-bottom: 1px solid var(--title);
-	margin-bottom: $block-margin;
 	&:last-child {
 		border: 0;
-		margin-bottom: 0;
 	}
 	&__img {
 		max-width: 100%;
 	}
 	&__meta {
-		@include font(var(--12px-size), 16px, var(--title), 0.05em, 400);
 		align-self: flex-start;
 	}
 	&__up {
 		display: flex;
 		flex-direction: column;
 	}
-	&__text {
-		@include font(var(--16px-size), 24px, var(--title), 0.05em, 300);
-		margin-bottom: $text-margin;
-	}
 	&__trick {
 		border-top: 5px solid var(--border-trick);
 		border-bottom: 5px solid var(--border-trick);
 	}
-	&__text-trick {
-		@include font(var(--16px-size), 24px, var(--title), 0.05em, 700);
-		margin-bottom: $text-margin;
-	}
 	&__share {
 		width: 100%;
-		margin-bottom: 35px;
 	}
 	&__info {
 		display: none;
@@ -43,16 +31,12 @@
 			width: 100%;
 			display: flex;
 			align-items: center;
-			margin-bottom: $info-margin;
 		}
 	}
 	&__recipe {
 		width: 100px;
 		display: flex;
 		justify-content: space-between;
-	}
-	&__picture {
-		margin-bottom: $info-margin;
 	}
 	&__likes,
 	&__like,
@@ -63,8 +47,6 @@
 	}
 	&__likes {
 		width: 84px;
-		font-family: 'Roboto Condensed', sans-serif;
-		@include font(var(--12px-size), 16px, var(--title), 0.05em, 700);
 	}
 	&__social {
 		width: 100%;
@@ -76,10 +58,6 @@
 		align-items: center;
 		&:last-child {
 			border: 0;
-			margin-bottom: 0;
-		}
-		&__meta {
-			@include font(var(--16px-size), 24px, var(--title), 0.05em, 400);
 		}
 		&__up {
 			display: flex;
@@ -91,13 +69,9 @@
 			display: flex;
 			align-items: center;
 		}
-		&__info {
-			margin-bottom: 20px;
-		}
 		&__trick {
 			border: 0;
 			border-left: 5px solid var(--border-trick);
-			padding-left: 35px;
 		}
 		&__elem {
 			width: 120px;
@@ -105,11 +79,9 @@
 		}
 		&__likes {
 			width: 100px;
-			margin-left: auto;
 		}
 		&__social {
 			width: 100%;
-			margin-bottom: $block-margin;
 		}
 	}
 }

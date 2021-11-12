@@ -1,15 +1,12 @@
 .header {
+	margin-bottom: $block-margin;
 	&__wrap {
 		display: flex;
 		justify-content: center;
-		column-gap: 10px;
 	}
 	&__menu {
 		border-top: 1px var(--title) solid;
 		border-bottom: 1px var(--title) solid;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		margin-bottom: $block-margin;
 	}
 	&__icon {
 		width: 20px;

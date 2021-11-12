@@ -5,6 +5,9 @@
 		display: flex;
 		justify-content: space-between;
 	}
+	&__card {
+		margin-bottom: $block-margin;
+	}
 }
 
 @media (min-width: $tablet-width) {

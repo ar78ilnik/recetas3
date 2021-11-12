@@ -2,40 +2,25 @@
 
 .link {
 	text-decoration: none;
-	@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
 	&_nav {
 		display: inline-block;
-		font-family: 'Inter', sans-serif;
-		@include font(var(--18px-size), 24px, var(--title), 0.03em, 400);
-		padding-top: 32px;
-		padding-bottom: 32px;
 	}
 	&_category {
-		color: var(--title);
 		display: block;
 		width: 100%;
-		line-height: 32px;
 	}
 	&_general {
-		margin: 70px auto;
 		border: 1px solid var(--title);
 		border-radius: 23px;
-		padding: 14px 23px;
-		@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
 	}
 	&_recipe {
-		margin: 15px;
 		border: 1px solid var(--title);
 		border-radius: 23px;
-		padding: 14px 23px;
 		display: inline-block;
 		min-width: 230px;
-		text-align: center;
 	}
 	&_search {
 		display: block;
-		padding-bottom: 15px;
-		padding-top: 15px;
 	}
 	&_social {
 		font-size: 0;

@@ -1,7 +1,5 @@
-@mixin font($font-size, $line-height, $color, $letter-spacing, $font-weight) {
+@mixin font($font-size, $font-weight) {
 	font-size: $font-size;
-	line-height: $line-height;
-	color: $color;
-	letter-spacing: $letter-spacing;
+	line-height: calc($font-size*2);
 	font-weight: $font-weight;
 }

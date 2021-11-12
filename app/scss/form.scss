@@ -6,27 +6,16 @@
 		flex-direction: column;
 		align-items: center;
 	}
-	&__legend {
-		@include font(var(--16px-size), 24px, var(--title), 0.05em, 500);
-		margin-bottom: 13px;
-	}
 	&__fieldset {
 		border: 0;
 	}
 	&__personal {
 		display: flex;
-		column-gap: .5em;
-		margin-bottom: $info-margin;
-	}
-	&__label {
-		@include font(var(--14px-size), 21px, var(--title), 0.05em, 700);
 	}
 	&__input {
-		padding: 15px 60px 15px 20px;
 		border-radius: 20px;
 		border: 1px solid var(--border);
 		width: 100%;
-		margin-bottom: $info-margin;
 		&_radio {
 			width: auto;
 			border: 0;
@@ -36,22 +25,13 @@
 		border: 1px solid var(--border);
 	}
 	&__submit {
-		padding: 15px 23px;
 		border-radius: 20px;
 		border: 1px solid var(--border);
 		background-color: var(--basic-white);
 		cursor: pointer;
-		@include font(var(--14px-size), 16px, var(--title), 0.1em, 400);
 	}
 	&__submit_words {
 		position: absolute;
-		bottom: 15px;
 		right: 0;
-	}
-}
-
-@media (min-width: $tablet-width) {
-	.form{
-		margin: 0 auto;
 	}
 }
