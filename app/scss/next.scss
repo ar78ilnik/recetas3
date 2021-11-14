@@ -6,6 +6,7 @@
 	&__previus,
 	&__follow {
 		position: relative;
+		color: var(--text);
 	}
 	&__previus::after {
 		content: 'Предыдущий';
@@ -13,6 +14,7 @@
 		position: absolute;
 		top: 0;
 		left: 30px;
+		@include font-text(var(--font-size), 400);
 	}
 	&__follow::after {
 		content: 'Следующий';

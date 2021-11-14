@@ -4,7 +4,7 @@
 	position: relative;
 	font-family: 'Inter', sans-serif;
 	color: var(--text);
-	@include font(var(--font-size), 400);
+	@include font-text(var(--font-size), 400);
 	&__back {
 		display: none;
 	}

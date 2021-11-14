@@ -6,6 +6,7 @@
 
 @media (min-width: $tablet-width) {
 	.today {
-		display: block;
+		display: flex;
+		column-gap: var(--column-gap);
 	}
 }

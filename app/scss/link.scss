@@ -1,6 +1,8 @@
 /* Link */
 
 .link {
+	color: var(--text);
+	@include font-text(var(--font-size), 400);
 	text-decoration: none;
 	&_nav {
 		display: inline-block;
@@ -10,11 +12,13 @@
 		width: 100%;
 	}
 	&_general {
-		border: 1px solid var(--title);
+		border: 1px solid var(--borders);
 		border-radius: 23px;
+		margin-bottom: var(--bottom-margin);
+		padding: 0.5em 1.5em;
 	}
 	&_recipe {
-		border: 1px solid var(--title);
+		border: 1px solid var(--borders);
 		border-radius: 23px;
 		display: inline-block;
 		min-width: 230px;

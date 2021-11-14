@@ -7,8 +7,15 @@
 li {
 	list-style-type: none;
 }
+
+/* Font sizes*/
 :root {
 	--font-size: 100%;
+}
+
+/*Column gap*/
+:root {
+	--column-gap: 2em;
 }
 
 /* Colors */
@@ -16,4 +23,12 @@ li {
 	--basic-black: #000000;
 	--basic-white: #ffffff;
 	--text: #121213;
+	--title: #444444;
+	--borders: #a2abbd;
+}
+
+/* Margins */
+:root {
+	--link-margin: 2em;
+	--bottom-margin: 4em;
 }

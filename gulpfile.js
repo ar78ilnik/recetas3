@@ -113,6 +113,7 @@ function watch() {
     gulp.watch('app/scss/*.scss', style);
     gulp.watch('app/js/**/*.js', js);
     gulp.watch('app/fonts/*.{woff, woff2}', copy);
+    gulp.watch('app/img/**/*.jpg', toWebp);
     gulp.watch('app/img/**/*.svg', sprite);
 };
 
@@ -126,7 +127,7 @@ function server() {
     bs.watch('app/img/**/*.*').on('change', bs.reload);
 };
 
-const build = gulp.series(clean, copy, images, toAvif, sprite, style, js, html, gulp.parallel(watch, server));
+const build = gulp.series(clean, copy, images, sprite, style, js, html, gulp.parallel(watch, server));
 
 exports.clean = clean;
 exports.html = html;

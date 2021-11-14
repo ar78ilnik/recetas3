@@ -25,6 +25,7 @@
 		&_nav {
 			display: flex;
 			border-bottom: 1px var(--title) solid;
+			column-gap: var(--column-gap);
 		}
 	}
 }

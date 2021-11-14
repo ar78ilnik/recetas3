@@ -1,5 +1,11 @@
-@mixin font($font-size, $font-weight) {
+@mixin font-text($font-size, $font-weight) {
 	font-size: $font-size;
 	line-height: calc($font-size*2);
+	font-weight: $font-weight;
+}
+
+@mixin font-title($font-size, $font-weight) {
+	font-size: $font-size;
+	line-height: calc($font-size*1.4);
 	font-weight: $font-weight;
 }

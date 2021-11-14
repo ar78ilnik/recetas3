@@ -1,14 +1,15 @@
 /* Title */
 .title {
-	color: var(--text);
+	color: var(--title);
+	margin-bottom: $h2-margin;
 	&_h1 {
 		display: none;
 	}
 	&_h2 {
-		@include font(calc(var(--font-size)*1.25), 600);
+		@include font-title(calc(var(--font-size)*1.25), 600);
 		margin-bottom: $h2-margin;
 	}
 	&_h3 {
-		@include font(var(--font-size), 400);
+		@include font-title(calc(var(--font-size)*1.125), 600);
 	}
 }
