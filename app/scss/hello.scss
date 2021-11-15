@@ -2,6 +2,9 @@
 .hello {
 	display: flex;
 	flex-direction: column;
+	&__picture {
+		margin: var(--link-margin) auto;
+	}
 }
 
 @media (min-width: $tablet-width) {

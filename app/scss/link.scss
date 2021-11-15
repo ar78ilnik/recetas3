@@ -14,8 +14,8 @@
 	&_general {
 		border: 1px solid var(--borders);
 		border-radius: 23px;
-		margin-bottom: var(--bottom-margin);
-		padding: 0.5em 1.5em;
+		padding: 10px 19px;
+		margin-bottom: calc(var(--link-margin)*2);
 	}
 	&_recipe {
 		border: 1px solid var(--borders);
@@ -25,6 +25,8 @@
 	}
 	&_search {
 		display: block;
+		margin-top: calc(var(--link-margin)/2);
+		margin-bottom: calc(var(--link-margin)/2);
 	}
 	&_social {
 		font-size: 0;

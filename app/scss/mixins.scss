@@ -6,6 +6,6 @@
 
 @mixin font-title($font-size, $font-weight) {
 	font-size: $font-size;
-	line-height: calc($font-size*1.4);
+	line-height: font-size;
 	font-weight: $font-weight;
 }

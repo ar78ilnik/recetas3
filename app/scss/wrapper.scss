@@ -1,12 +1,15 @@
 /* Wrapper */
 
 .wrapper {
+	&__cards {
+		margin-bottom: var(--bottom-margin);
+	}
 	&_social {
 		display: flex;
 		justify-content: space-between;
 	}
 	&__card {
-		margin-bottom: $block-margin;
+		margin-bottom: var(--bottom-margin);
 		&:last-child {
 			margin-bottom: 0;
 		}

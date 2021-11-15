@@ -2,7 +2,7 @@
 .next {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: $block-margin;
+	margin-bottom: var(--bottom-margin);
 	&__previus,
 	&__follow {
 		position: relative;

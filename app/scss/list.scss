@@ -8,15 +8,25 @@
 		border-bottom: 1px solid var(--title);
 	}
 	&__item_search {
-		border-bottom: 1px solid var(--border);
+		border-bottom: 1px solid var(--borders);
 	}
-	&__item_new {
+	&__item_new{
 		display: flex;
+		column-gap: var(--column-gap);
+		margin-bottom: var(--bottom-margin);
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+	&__item_menu {
+		display: flex;
+		column-gap: var(--column-gap);
+		border-bottom: 1px solid var(--borders);
 	}
 	&__info {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: space-around;
 	}
 }
 
@@ -26,6 +36,7 @@
 			display: flex;
 			border-bottom: 1px var(--title) solid;
 			column-gap: var(--column-gap);
+			padding: 1em;
 		}
 	}
 }

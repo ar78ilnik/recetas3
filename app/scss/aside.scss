@@ -3,6 +3,17 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	&__item {
+		margin-bottom: var(--bottom-margin);
+	}
+	&__hello {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__date {
+		@include font-text(calc(var(--font-size)*0.75), 400);
+	}
 	&__form {
 		width: 296px;
 	}

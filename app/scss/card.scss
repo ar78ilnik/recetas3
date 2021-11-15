@@ -27,7 +27,7 @@
 	}
 	&__share {
 		width: 100%;
-		margin-bottom: $h2-margin;
+		margin-bottom: var(--bottom-margin);
 	}
 	&__info {
 		display: none;
