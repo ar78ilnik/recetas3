@@ -8,18 +8,24 @@
 	&:last-child {
 		border: 0;
 	}
+	&__picture {
+		margin-top: 0.75em;
+		margin-bottom: 0.75em;
+	}
 	&__img {
 		max-width: 100%;
 	}
 	&__meta {
 		align-self: flex-start;
+		font-size: 0.75rem;
 	}
 	&__up {
 		display: flex;
 		flex-direction: column;
 	}
 	&__text {
-		margin-bottom: var(--bottom-margin);
+		font-size: 1rem;
+		line-height: 1.5em;
 	}
 	&__trick {
 		border-top: 5px solid var(--border-trick);
@@ -27,7 +33,7 @@
 	}
 	&__share {
 		width: 100%;
-		margin-bottom: var(--bottom-margin);
+		margin-bottom: 1em;
 	}
 	&__info {
 		display: none;

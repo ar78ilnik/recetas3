@@ -2,6 +2,11 @@
 
 .list {
 	list-style-type: none;
+	font-size: 1rem;
+	&__item {
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
 	&__item_category {
 		display: flex;
 		align-items: center;
@@ -9,19 +14,20 @@
 	}
 	&__item_search {
 		border-bottom: 1px solid var(--borders);
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	&__item_new{
 		display: flex;
-		column-gap: var(--column-gap);
-		margin-bottom: var(--bottom-margin);
+		column-gap: 1em;
 		&:last-child {
 			margin-bottom: 0;
 		}
 	}
 	&__item_menu {
 		display: flex;
-		column-gap: var(--column-gap);
 		border-bottom: 1px solid var(--borders);
+		column-gap: 1em;
 	}
 	&__info {
 		display: flex;

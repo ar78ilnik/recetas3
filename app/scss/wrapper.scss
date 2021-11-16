@@ -2,14 +2,13 @@
 
 .wrapper {
 	&__cards {
-		margin-bottom: var(--bottom-margin);
 	}
 	&_social {
 		display: flex;
 		justify-content: space-between;
 	}
 	&__card {
-		margin-bottom: var(--bottom-margin);
+		margin-bottom: 3.5rem;
 		&:last-child {
 			margin-bottom: 0;
 		}

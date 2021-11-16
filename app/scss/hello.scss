@@ -2,6 +2,10 @@
 .hello {
 	display: flex;
 	flex-direction: column;
+	&__text {
+		font-size: 1rem;
+		margin-bottom: 2.5em;
+	}
 	&__picture {
 		margin: var(--link-margin) auto;
 	}

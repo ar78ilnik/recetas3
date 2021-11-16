@@ -2,7 +2,6 @@
 
 .link {
 	color: var(--text);
-	@include font-text(var(--font-size), 400);
 	text-decoration: none;
 	&_nav {
 		display: inline-block;
@@ -12,10 +11,12 @@
 		width: 100%;
 	}
 	&_general {
+		font-size: 0.875rem;
 		border: 1px solid var(--borders);
 		border-radius: 23px;
-		padding: 10px 19px;
-		margin-bottom: calc(var(--link-margin)*2);
+		padding: 0.875em 1.375em;
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
 	&_recipe {
 		border: 1px solid var(--borders);

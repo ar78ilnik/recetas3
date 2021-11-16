@@ -8,16 +8,6 @@ li {
 	list-style-type: none;
 }
 
-/* Font sizes*/
-:root {
-	--font-size: 100%;
-}
-
-/*Column gap*/
-:root {
-	--column-gap: 2em;
-}
-
 /* Colors */
 :root {
 	--basic-black: #000000;
@@ -26,10 +16,4 @@ li {
 	--title: #444444;
 	--borders: #a2abbd;
 	--footer: #282a2d;
-}
-
-/* Margins */
-:root {
-	--link-margin: 2em;
-	--bottom-margin: 4em;
 }

@@ -2,7 +2,8 @@
 .next {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: var(--bottom-margin);
+	font-size: 0.875rem;
+	margin-bottom: 4em;
 	&__previus,
 	&__follow {
 		position: relative;

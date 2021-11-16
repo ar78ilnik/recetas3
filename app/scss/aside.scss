@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	&__item {
-		margin-bottom: var(--bottom-margin);
+		margin-bottom: 4rem;
 	}
 	&__hello {
 		display: flex;
@@ -12,7 +12,7 @@
 		align-items: center;
 	}
 	&__date {
-		@include font-text(calc(var(--font-size)*0.75), 400);
+		font-size: 0.75rem;
 	}
 	&__form {
 		width: 296px;
