@@ -22,9 +22,11 @@
 
 @media (min-width: $desktop-width) {
 	.container {
-		width: $container-desktop;
+		width: 1283px;
 		&_main {
 			display: grid;
+			grid-template-columns: 2fr 1fr;
+			grid-template-rows: min-content auto;
 		}
 		&_menu {
 			width: 100%;
