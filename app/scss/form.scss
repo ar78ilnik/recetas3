@@ -16,8 +16,8 @@
 		border-radius: 23px;
 		border: 1px solid var(--borders);
 		width: 100%;
-		@include font-text(var(--font-size), 400);
-		padding: 10px 19px;
+		font-size: 0.875rem;
+		padding: 0.875em 1.375em;
 		&_radio {
 			width: auto;
 			border: 0;
@@ -36,7 +36,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		@include font-text(var(--font-size), 400);
-		padding: 10px 19px;
+		font-size: 0.875rem;
+		padding: 0.875em 1.375em;
 	}
 }

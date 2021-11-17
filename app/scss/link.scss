@@ -9,6 +9,8 @@
 	&_category {
 		display: block;
 		width: 100%;
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	&_general {
 		font-size: 0.875rem;
@@ -26,8 +28,8 @@
 	}
 	&_search {
 		display: block;
-		margin-top: calc(var(--link-margin)/2);
-		margin-bottom: calc(var(--link-margin)/2);
+		padding-top: 1em;
+		padding-bottom: 1em;
 	}
 	&_social {
 		font-size: 0;
