@@ -16,3 +16,18 @@
 		font-size: 0.875rem;
 	}
 }
+
+@media (min-width: $tablet-width) {
+	.title {
+		&_h2 {
+			font-size: 1.625rem;
+			text-align: center;
+		}
+		&_h3 {
+			font-size: 1.5rem;
+		}
+		&_hello {
+			order: 1;
+		}
+	}
+}

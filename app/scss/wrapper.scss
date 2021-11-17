@@ -1,8 +1,6 @@
 /* Wrapper */
 
 .wrapper {
-	&__cards {
-	}
 	&_social {
 		display: flex;
 		justify-content: space-between;
@@ -17,6 +15,9 @@
 
 @media (min-width: $tablet-width) {
 	.wrapper {
+		&_recipes {
+			width: 100%;
+		}
 		width: 80%;
 		margin: 0 auto;
 	}

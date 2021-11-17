@@ -6,9 +6,6 @@
 		font-size: 1rem;
 		margin-bottom: 2.5em;
 	}
-	&__picture {
-		margin: var(--link-margin) auto;
-	}
 }
 
 @media (min-width: $tablet-width) {
@@ -16,10 +13,12 @@
 		align-items: center;
 		&__picture {
 			order: 0;
+			margin-bottom: 1em;
 		}
 		&__text {
 			order: 2;
 			width: 80%;
+			line-height: 1.5em;
 		}
 	}
 }

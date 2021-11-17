@@ -79,16 +79,24 @@
 			display: flex;
 			align-items: center;
 		}
+		&__info {
+			column-gap: 1em;
+			margin-bottom: 1em;
+		}
+		&__meta {
+			font-size: 1rem;
+		}
 		&__trick {
 			border: 0;
 			border-left: 5px solid var(--border-trick);
 		}
 		&__elem {
-			width: 120px;
-			justify-content: space-around;
+			width: 100px;
+			justify-content: space-between;
 		}
 		&__likes {
 			width: 100px;
+			margin-left: auto;
 		}
 		&__social {
 			width: 100%;

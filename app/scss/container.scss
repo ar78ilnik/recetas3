@@ -14,13 +14,6 @@
 @media (min-width: $portait-width) {
 	.container {
 		width: $container-portait;
-		&_main {
-			display: flex;
-			flex-wrap: wrap;
-			flex-direction: row;
-			justify-content: space-between;
-			width: 90%;
-		}
 		&_menu {
 			width: 100%;
 		}
@@ -30,6 +23,9 @@
 @media (min-width: $desktop-width) {
 	.container {
 		width: $container-desktop;
+		&_main {
+			display: grid;
+		}
 		&_menu {
 			width: 100%;
 		}

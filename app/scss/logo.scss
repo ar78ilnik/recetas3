@@ -17,5 +17,20 @@
 
 @media (min-width: $tablet-width) {
 	.logo {
+		&__recetas {
+			font-size: 2.5rem;
+		}
+		&__dop {
+			font-size: 2rem;
+		}
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.container {
+		width: $container-desktop;
+		&_menu {
+			width: 100%;
+		}
 	}
 }
