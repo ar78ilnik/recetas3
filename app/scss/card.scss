@@ -35,6 +35,10 @@
 		width: 100%;
 		margin-bottom: 1em;
 	}
+	&__links {
+		display: flex;
+		flex-direction: column;
+	}
 	&__info {
 		display: none;
 		&_recipe {

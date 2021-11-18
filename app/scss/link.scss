@@ -19,6 +19,9 @@
 		padding: 0.875em 1.375em;
 		margin-top: 3em;
 		margin-bottom: 3em;
+		&:last-child {
+			margin: 0;
+		}
 	}
 	&_recipe {
 		border: 1px solid var(--borders);
